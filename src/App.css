@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #E5D6FF;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.burgerPage {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.calc {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 60%;
+  padding: 5px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.calc label {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #F0F0F0;
+  border: 4px solid #FFCCC7;
+  border-radius: 6px;
+  width: 100px;
+  height: 25px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.calc label .calcInput {
+  border: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.calc label Input,
+.calc label p {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  color: #60A802;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: fantasy;
+  background-color: #F0F0F0;
+}
+
+.burger {
+  margin: 0px;
+  margin-top: 50px;
+  padding: 100px 0px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tomatoes,
+.meat,
+.marol,
+.topBread,
+.chees,
+.onions {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 0px;
+}
+
+.chees {
+  width: 20%;
+  height: 13%;
+  cursor: pointer;
+}
+
+.tomatoes,
+.onions {
+  width: 18%;
+  height: 13%;
+  cursor: pointer;
+}
+
+.bread,
+.topBread,
+.meat,
+.marol {
+  width: 22%;
+  height: 15%;
+  cursor: pointer;
+}
+
+
+/* /////////////////////////////////////////////////////////  Responsive design  */
+
+@media (max-width: 1199px) {
+  .burger {
+      height: 450px;
   }
-  to {
-    transform: rotate(360deg);
+  .meat,
+  .marol,
+  .topBread,
+  .bread,
+  .chees {
+      width: 22%;
+      height: 14%;
+  }
+  .tomatoes,
+  .onions {
+      width: 18%;
+      height: 12%;
+  }
+  .bread {
+      width: 22%;
+      height: 18%;
+  }
+}
+
+@media (max-width: 991px) {
+  .burger {
+      height: 400px;
+  }
+  .meat,
+  .marol,
+  .topBread,
+  .bread,
+  .chees {
+      width: 24%;
+      height: 14%;
+  }
+  .tomatoes,
+  .onions {
+      width: 20%;
+      height: 12%;
+  }
+  .bread {
+      width: 24%;
+      height: 16%;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger {
+      height: 300px;
+  }
+  .meat,
+  .marol,
+  .topBread,
+  .bread,
+  .chees {
+      width: 20%;
+      height: 10%;
+  }
+  .tomatoes,
+  .onions {
+      width: 16%;
+      height: 8%;
+  }
+  .bread {
+      width: 20%;
+      height: 12%;
+  }
+}
+
+@media (max-width: 576px) {
+  .burger {
+      height: 200px;
+  }
+  .meat,
+  .marol,
+  .topBread,
+  .bread,
+  .chees {
+      width: 20%;
+      height: 10%;
+  }
+  .tomatoes,
+  .onions {
+      width: 16%;
+      height: 8%;
+  }
+  .bread {
+      width: 20%;
+      height: 12%;
   }
 }
