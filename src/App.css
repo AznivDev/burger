@@ -26,8 +26,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: flex;
   vertical-align: middle;
+  gap:5px;
 }
 
 #price,
@@ -35,7 +35,6 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  width: 50%;
   color: #60A802;
   font-weight: 300;
   font-family: fantasy;
