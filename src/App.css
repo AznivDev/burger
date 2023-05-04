@@ -185,6 +185,10 @@ body {
   .calc {
     margin-left: 40%;
   }
+  .calc label Input,
+  .calc label p {
+    font-size: 10px;
+  }
   .meat,
   .marol,
   .topBread,
