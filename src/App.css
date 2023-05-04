@@ -16,7 +16,7 @@ body {
   position: absolute;
   margin-top: 25px;
   margin-left: 60%;
-  /* padding: 5px; */
+  padding: 5px;
   height: 50px;
   display: flex;
   flex-direction: row-reverse;
@@ -27,7 +27,6 @@ body {
   padding: 5px;
   display: flex;
   flex-direction: row;
-  display: flex;
   justify-content: center;
   background-color: #F0F0F0;
   border: 4px solid #FFCCC7;
@@ -40,10 +39,10 @@ body {
   -o-border-radius: 6px;
 }
 
-/* .calc label .price {
+.calc label .price {
   border: none;
   outline: none;
-} */
+}
 
 .calc label Input,
 .calc label p {
@@ -182,6 +181,9 @@ body {
 @media (max-width: 576px) {
   .burger {
       height: 200px;
+  }
+  .calc {
+    margin-left: 40%;
   }
   .meat,
   .marol,
