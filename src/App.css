@@ -13,7 +13,7 @@ body {
 }
 
 .calc {
-  position: absolute;
+  /* position: absolute; */
   padding: 5px;
   margin-top: 25px;
   margin-left: 60%;
