@@ -39,7 +39,7 @@ function App() {
     <div className="burgerPage">
      
       <div className="calc">
-          <label><input type="reset" className="price" value={price}/><p>դրամ</p></label>
+          <label><input type="reset" className="price" value={price}/><pre> դրամ</pre></label>
       </div>
 
       <div className="burger">
